@@ -1,4 +1,4 @@
-# Install SSMS
+# Install MS SQL Server Express 2017
 
 *Note: Mac users will need to use a PC (see options below).*
 
