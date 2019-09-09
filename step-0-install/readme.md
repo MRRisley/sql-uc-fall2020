@@ -15,3 +15,10 @@
 3. SQL Server is installed on the VM. Use 2014 if multiple versions are installed.
 4. Use your I:/ drive or OneDrive!
 
+## Download and install AdventureWorks
+
+[*AdventureWorks GitHub*](https://github.com/Microsoft/sql-server-samples/blob/master/samples/databases/adventure-works/README.md)
+
+**We will install from a backup!!!** There are multiple options.
+
+1. **If possible, use AdventureWorks 2014**, but ensure that you download AdventureWorks version that is compatible with your version of SQL Server. The year of AdventureWorks must be less than or equal to <= the year of SQL Server. No one should run a SQL Server version prior to 2014, so this shouldn't be an issue.
