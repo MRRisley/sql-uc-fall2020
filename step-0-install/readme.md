@@ -8,6 +8,7 @@
 1. Go to next step if you're not using your own PC. 
 2. [MS SQL Server **Express** Download Page](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
 3. Click "download now."
+4. [Follow these steps to complete set-up]()
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
@@ -19,6 +20,6 @@
 
 [*AdventureWorks GitHub*](https://github.com/Microsoft/sql-server-samples/blob/master/samples/databases/adventure-works/README.md)
 
-###**We will install from a backup!!!** There are multiple options.
+### **We will install from a backup!!!** There are multiple options.
 
-1. *If possible, use AdventureWorks 2014*, but ensure that you download AdventureWorks version that is compatible with your version of SQL Server. The year of AdventureWorks must be less than or equal to <= the year of SQL Server. No one should run a SQL Server version prior to 2014, so this shouldn't be an issue.
+1. *Use AdventureWorks 2014.* It is important to ensure that the AdventureWorks version is compatible with the version of SQL Server. The year of AdventureWorks must be less than or equal to the year of SQL Server. No one should run a SQL Server version prior to 2014, so this shouldn't be an issue. AdventureWorks 2014 will work just fine with SQL Server 2017.
