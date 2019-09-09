@@ -1,4 +1,5 @@
 # Setting up MS SQL Server
+
 *Note: Mac users will need to use a PC/Windows. Lindner has loaner laptops as well as a Virtual Lab.*
 
 ## Install & start MS SQL Server Express 2017 for local PC.
@@ -9,6 +10,7 @@
 3. Click "download now."
 
 *(Mac Option)*
+
 **For UC Virtual Machine (VM) or Loaner Laptop:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
 2. Connect to the Lindner Virtual lab through VM Horizon.
