@@ -13,7 +13,7 @@
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
 2. Connect to the Lindner Virtual lab through VM Horizon.
-3. SQL Server is installed on the VM. Use 2014 if multiple versions are installed.
+3. SQL Server is installed on the VM. Feel free to use the most recent version if multiple versions are installed.
 4. Use your I:/ drive or OneDrive!
 
 ## Download and install AdventureWorks
