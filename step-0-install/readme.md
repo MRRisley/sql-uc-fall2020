@@ -10,9 +10,10 @@
 3. Click "download now."
 4. Run and follow these steps:
     + When prompted, select the Basic installation.
-    + Restart may be required.
+    + *Restart may be required.*
     + At end of installation, select "Install SMSS" **OR** [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
 5. Install SMSS.
+    + *Restart may be required.*
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
