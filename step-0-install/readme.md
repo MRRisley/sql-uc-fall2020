@@ -29,9 +29,15 @@
     + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
     + *ucvlabs.uc.edu is the connection server. It's embedded in the instructions.*
 4. Select "LCB Student Desktop" as the VM. *Note: This has changed through time.*
-5. SQL Server is installed on the VM. Feel free to use the most recent version if multiple versions are installed.
-6. You're in! Congratulations!
+5. SQL Server is installed on the VM. *Note: may be small version differences, but they will not impact your work in this course,*
+6. Navigate to the SSMS 17 Application. `Start -> Microsoft SQL Server Tools 17 -> SQL Server Management Studio 17` *Note: This may change to version 18 if it's updated.*
+7. Press connect (see image). *Your server name will differ*. 
 
+    <img src="img/ssms-connect-2.jpg" alt="SSMS Connect Window" width="400"/>
+
+7. You're in! Congratulations!
+
+<!--
 ## Download and install AdventureWorks
 
 [*AdventureWorks GitHub*](https://github.com/Microsoft/sql-server-samples/blob/master/samples/databases/adventure-works/README.md)
@@ -39,3 +45,4 @@
 We will **install from a backup**!!! There are multiple options.
 
 1. *Use AdventureWorks 2014.* It is important to ensure that the AdventureWorks version is compatible with the version of SQL Server. The year of AdventureWorks must be less than or equal to the year of SQL Server. No one should run a SQL Server version prior to 2014, so this shouldn't be an issue. AdventureWorks 2014 will work just fine with SQL Server 2017.
+-->
