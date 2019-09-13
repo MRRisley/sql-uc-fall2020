@@ -28,9 +28,9 @@
 2. Connect to the UC virtual lab through VM Horizon. 
     + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
     + *ucvlabs.uc.edu is the connection server. It's embedded in the instructions.*
-4. Select "LCB Student Desktop" as the VM. *Note: This has changed through time.*
-5. SQL Server is installed on the VM. *Note: may be small version differences, but they will not impact your work in this course,*
-6. Navigate to the SSMS 17 Application. `Start -> Microsoft SQL Server Tools 17 -> SQL Server Management Studio 17` *Note: This may change to version 18 if it's updated.*
+4. Select "LCB Student Desktop" as the VM. <small>*Note: This has changed through time.*</small>
+5. SQL Server is installed on the VM. <small>*Note: may be small version differences, but they will not impact your work in this course.*</small>
+6. Navigate to the SSMS 17 Application. `Start -> Microsoft SQL Server Tools 17 -> SQL Server Management Studio 17` <small>*Note: This may change to version 18 if it's updated.</small>
 7. Press connect (see image). *Your server name will differ*. 
 
     <img src="img/ssms-connect-2.jpg" alt="SSMS Connect Window" width="400"/>
