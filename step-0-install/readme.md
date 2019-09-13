@@ -2,7 +2,7 @@
 
 *Note: Mac users will need to use a PC/Windows. Lindner has loaner laptops as well as a Virtual Lab.*
 
-## Install & start MS SQL Server Express 2017 for local PC.
+## Install/Run MS SQL Server Express 2017 & SSMS 18.2
 
 **For Local PC:**
 1. Go to next step if you're not using your own PC. 
@@ -11,7 +11,7 @@
 4. Run and follow these steps:
     + When prompted, select the Basic installation.
     + Restart may be required.
-    + At end of installation, select "Install SMSS" OR [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
+    + At end of installation, select "Install SMSS" **OR** [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
