@@ -12,6 +12,7 @@
     + When prompted, select the Basic installation.
     + Restart may be required.
     + At end of installation, select "Install SMSS" **OR** [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
+5. Install SMSS.
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
@@ -19,6 +20,9 @@
     + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
 3. SQL Server is installed on the VM. Feel free to use the most recent version if multiple versions are installed.
 4. Use your I:/ drive or OneDrive!
+
+
+
 
 ## Download and install AdventureWorks
 
