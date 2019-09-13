@@ -1,10 +1,8 @@
-# Setting up MS SQL Server
+# Install/Run MS SQL Server Express 2017 & SSMS 18.2
 
 *Note: Mac users will need to use a PC/Windows. Lindner has loaner laptops as well as a Virtual Lab.*
 
-## Install/Run MS SQL Server Express 2017 & SSMS 18.2
-
-**For Local PC:**
+## For Local PC:
 1. Go to next step if you're not using your own PC. 
 2. [MS SQL Server **Express** Download Page](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
 3. Click "download now."
@@ -19,15 +17,12 @@
 
     <img src="img/ssms-connect.jpg" alt="SSMS Connect Window" width="400"/>
 
-**For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
+## For UC Virtual Machine (VM) or Loaner Laptop *(Mac Option)*
 1. If you're off-campus, you'll have to connect to UC's VPN first.
 2. Connect to the Lindner Virtual lab through VM Horizon. 
     + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
 3. SQL Server is installed on the VM. Feel free to use the most recent version if multiple versions are installed.
 4. Use your I:/ drive or OneDrive!
-
-
-
 
 ## Download and install AdventureWorks
 
