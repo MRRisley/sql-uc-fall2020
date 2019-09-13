@@ -7,7 +7,7 @@
 *Recommended if you own a Windows machine.*
 
 1. Go to next step if you're not using your own PC or you own a Mac.
-2. Download [MS SQL Server **Express** 2017](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
+2. Download [MS SQL Server **Express** 2017](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express).
     + Click "download now."
 3. Run and follow these steps:
     + When prompted, select the Basic installation.
@@ -22,7 +22,7 @@
  
 7. You're in! Congratulations!
 
-## Option 2: UC Virtual Machine (VM) or Loaner Laptop *(Mac Option)*
+## Option 2 *(Mac Option)*: UC Virtual Machine (VM) or Loaner Laptop 
 
 #### *IMPORTANT: The VM, like a loaner laptop, is not your machine. When working there, you must use OneDrive or your I:/ drive in order to save your work. If you save it elsewhere, you won't be able to access it after you close the connection!!!*
 
