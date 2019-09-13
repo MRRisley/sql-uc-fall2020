@@ -14,6 +14,10 @@
     + At end of installation, select "Install SMSS" **OR** [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
 5. Install SMSS.
     + *Restart may be required.*
+6. Navigate to the SSMS 18 App. `Start -> Microsoft SQL Server Tools 18 -> SQL Server Management Studio 18`
+7. Press connect if you see a similar image below. *Your server name will differ*. Get with me if you can't press connect.
+
+    ![SSMS Connect Window](../img/ssms-connect.JPG)
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
