@@ -17,7 +17,7 @@
 6. Navigate to the SSMS 18 App. `Start -> Microsoft SQL Server Tools 18 -> SQL Server Management Studio 18`
 7. Press connect if you see a similar image below. *Your server name will differ*. Get with me if you can't press connect.
 
-    ![SSMS Connect Window](../img/ssms-connect.JPG)
+         ![SSMS Connect Window](../img/ssms-connect.jpg)
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
