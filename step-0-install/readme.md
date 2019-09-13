@@ -8,7 +8,7 @@
 1. Go to next step if you're not using your own PC. 
 2. [MS SQL Server **Express** Download Page](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
 3. Click "download now."
-4. Run and follow [these steps](2017-install-steps.md) to complete set-up.
+4. Run and follow these steps:
     + When prompted, select the Basic installation.
     + Restart may be required.
     + At end of installation, select "Install SMSS" OR [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
