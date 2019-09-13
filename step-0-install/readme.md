@@ -9,7 +9,7 @@
 2. [MS SQL Server **Express** Download Page](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
 3. Click "download now."
 4. Run and follow [these steps](2017-install-steps.md) to complete set-up.
-+ When prompted, select the Basic installation.,
+++ When prompted, select the Basic installation.,
 
 **For UC Virtual Machine (VM) or Loaner Laptop** *(Mac Option)* **:**
 1. If you're off-campus, you'll have to connect to UC's VPN first.
