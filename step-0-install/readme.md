@@ -27,12 +27,12 @@
 #### *IMPORTANT: The VM, like a loaner laptop, is not your machine. When working there, you must use OneDrive or your I:/ drive in order to save your work. If you save it elsewhere, you won't be able to access it after you close the connection!!!*
 
 1. If you're off-campus, you'll have to connect to UC's VPN first.
-    + *[Instructions](https://kb.uc.edu/KBArticles/VPN-InstallandUse.aspx).
+    + *Link to [Instructions](https://kb.uc.edu/KBArticles/VPN-InstallandUse.aspx).*
 2. Connect to the UC virtual lab through VM Horizon. 
     + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
     + *ucvlabs.uc.edu is the connection server. It's embedded in the instructions.*
 4. Select "LCB Student Desktop" as the VM. 
-    +*This has changed through time.*</small>
+    + *This has changed through time.*
 5. SQL Server is installed on the VM. 
     + *There may be small version differences from what we use in class, but they will not impact your work in this course.*
 6. Navigate to the SSMS 17 Application. `Start -> Microsoft SQL Server Tools 17 -> SQL Server Management Studio 17` 
