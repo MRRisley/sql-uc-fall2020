@@ -25,11 +25,12 @@
 ## Option 2: UC Virtual Machine (VM) or Loaner Laptop *(Mac Option)*
 1. If you're off-campus, you'll have to connect to UC's VPN first.
     + *[Instructions](https://kb.uc.edu/KBArticles/VPN-InstallandUse.aspx).
-2. Connect to the Lindner Virtual lab through VM Horizon. 
+2. Connect to the UC virtual lab through VM Horizon. 
     + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
     + *ucvlabs.uc.edu is the connection server. It's embedded in the instructions.*
-3. SQL Server is installed on the VM. Feel free to use the most recent version if multiple versions are installed.
-4. You're in! Congratulations!
+4. Select "LCB Student Desktop" as the VM. *Note: This has changed through time.*
+5. SQL Server is installed on the VM. Feel free to use the most recent version if multiple versions are installed.
+6. You're in! Congratulations!
 
 ## Download and install AdventureWorks
 
