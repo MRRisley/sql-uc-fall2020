@@ -6,7 +6,7 @@
 
 *Recommended if you own a Windows machine.*
 
-1. *Go to next step if you're not using your own PC.*
+1. Go to next step if you're not using your own PC or you own a Mac.
 2. Download [MS SQL Server **Express** 2017](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
     + Click "download now."
 3. Run and follow these steps:
