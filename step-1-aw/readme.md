@@ -15,6 +15,7 @@ The AdventureWorks database is a sammple SQL Server database built and maintaine
 
 1.
 
+*Source: [MS Documentation](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 # Install/Run MS SQL Server Express 2017 & SSMS 18.2
 
