@@ -5,7 +5,15 @@ The AdventureWorks database is a sammple SQL Server database built and maintaine
 ## Download AdventureWorks 2017
 
 1. Navigate to the [MS AdventureWorks Github](https://github.com/microsoft/sql-server-samples/releases/tag/adventureworks) site.
-2. Navigate to the portion of the site titled: *""*
+2. Navigate to the portion of the site titled: *"AdventureWorks (OLTP) full database backups"*.
+3. Click AdventureWorks2017.bak in order to download the back-up file.
+4. Note the download location.
+
+## Restore AdventureWorks 2017
+
+*If you are using a loaner laptop or virtual machine, **be sure to place the .bak file in your UC I:/ drive or OneDrive.***
+
+1.
 
 
 # Install/Run MS SQL Server Express 2017 & SSMS 18.2
