@@ -7,13 +7,16 @@ The AdventureWorks database is a sammple SQL Server database built and maintaine
 1. Navigate to the [MS AdventureWorks Github](https://github.com/microsoft/sql-server-samples/releases/tag/adventureworks) site.
 2. Navigate to the portion of the site titled: *"AdventureWorks (OLTP) full database backups"*.
 3. Click AdventureWorks2017.bak in order to download the back-up file.
-4. Note the download location.
+4. Write down the download location.
+    + For example, I save the .bak file to my desktop. Its location is `C:/users/rileymy/desktop/AdventureWorks2017.bak`.
 
 ## Restore AdventureWorks 2017
 
 *If you are using a loaner laptop or virtual machine, **be sure to place the .bak file in your UC I:/ drive or OneDrive.***
 
-1.
+1. Open SSMS and press `Connect`.
+    + You should not need to change any defaults.
+2. Create a New Query. `File -> New -> Query with Current Connection`. Note you can use the shortcut `Ctrl + N`.
 
 *Source: [MS Documentation](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
