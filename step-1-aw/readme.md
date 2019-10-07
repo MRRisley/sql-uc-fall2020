@@ -1,6 +1,6 @@
 # Set Up AdventureWorks Database
 
-The AdventureWorks database is a sammple SQL Server database built and maintained by Microsoft. Under the relational model, the database is useful to learn the power of the SQL query.
+The AdventureWorks database is a sample SQL Server database built and maintained by Microsoft. Built under a relational model, the database is useful to learn the power of the SQL query.
 
 ## Download AdventureWorks 2017
 
