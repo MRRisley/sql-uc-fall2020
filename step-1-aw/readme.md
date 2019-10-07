@@ -17,6 +17,7 @@ The AdventureWorks database is a sammple SQL Server database built and maintaine
 1. Open SSMS and press `Connect`.
     + You should not need to change any defaults.
 2. Create a New Query. `File -> New -> Query with Current Connection`. Note you can use the shortcut `Ctrl + N`.
+3. Save the query as `restore-aw.sql`. Use a location you'll remember. 
 
 *Source: [MS Documentation](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
