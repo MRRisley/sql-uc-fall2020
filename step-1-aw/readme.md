@@ -7,72 +7,18 @@ The AdventureWorks database is a sammple SQL Server database built and maintaine
 1. Navigate to the [MS AdventureWorks Github](https://github.com/microsoft/sql-server-samples/releases/tag/adventureworks) site.
 2. Navigate to the portion of the site titled: *"AdventureWorks (OLTP) full database backups"*.
 3. Click AdventureWorks2017.bak in order to download the back-up file.
-4. Write down the download location.
-    + For example, I save the .bak file to my desktop. Its location is `C:/users/rileymy/desktop/AdventureWorks2017.bak`.
+4. Save (or copy/paste) the file to `C:/Program Files`.
+    + This is important! SQL Server is very permissions-heavy for a reason, and placing it in a location like `C:/users/...` may result in an error when you go to restore the database.
 
 ## Restore AdventureWorks 2017
 
-*If you are using a loaner laptop or virtual machine, **be sure to place the .bak file in your UC I:/ drive or OneDrive.***
+*If you are using a loaner laptop or virtual machine, **be sure to place the .bak file in your UC I:/ drive or OneDrive.** [This video]() shows you how to restore the database through a virtual machine.*
 
 1. Open SSMS and press `Connect`.
     + You should not need to change any defaults.
-2. Create a New Query. `File -> New -> Query with Current Connection`. Note you can use the shortcut `Ctrl + N`.
-3. Save the query as `restore-aw.sql`. Use a location you'll remember. 
-
-*Source: [MS Documentation](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
-
-# Install/Run MS SQL Server Express 2017 & SSMS 18.2
-
-*Note: Mac users will need to use a PC/Windows. Lindner has loaner laptops as well as a Virtual Lab. See Option 2 below.*
-
-## Option 1: Local PC
-
-*Recommended if you own a Windows machine.*
-
-1. Go to next step if you're not using your own PC or you own a Mac.
-2. Download [MS SQL Server **Express** 2017](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express).
-    + Click "download now."
-3. Run and follow these steps:
-    + When prompted, select the Basic installation.
-    + *Restart may be required.*
-    + At end of installation, select "Install SMSS" **OR** [go here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-2017) to download.
-4. Run SMSS Installation from Step 3.
-    + *Restart may be required.*
-5. Navigate to the SSMS 18 Application. `Start -> Microsoft SQL Server Tools 18 -> SQL Server Management Studio 18`
-6. Press connect if you see a similar image below. *Your server name will differ*. Get with me if you can't press connect.
-
-    <img src="img/ssms-connect.jpg" alt="SSMS Connect Window" width="400"/>
- 
-7. You're in! Congratulations!
-
-## Option 2 *(Mac Option)*: UC Virtual Machine (VM) or Loaner Laptop 
-
-#### *IMPORTANT: The VM, like a loaner laptop, is not your machine. When working there, you must use OneDrive or your I:/ drive in order to save your work. If you save it elsewhere, you won't be able to access it after you close the connection!!!*
-
-1. If you're off-campus, you'll have to connect to UC's VPN first.
-    + *Link to [Instructions](https://kb.uc.edu/KBArticles/VPN-InstallandUse.aspx).*
-2. Connect to the UC virtual lab through VM Horizon. 
-    + *You have to download and set it up on your machine first if you haven't already. Link [for Windows](https://kb.uc.edu/KBArticles/UCVLabs-Windows.aspx) or [for Mac](https://kb.uc.edu/KBArticles/UCVLabs-MacOSX.aspx).*
-    + *ucvlabs.uc.edu is the connection server. It's embedded in the instructions.*
-4. Select "LCB Student Desktop" as the VM. 
-    + *This has changed through time.*
-5. SQL Server is installed on the VM. 
-    + *There may be small version differences from what we use in class, but they will not impact your work in this course.*
-6. Navigate to the SSMS 17 Application. `Start -> Microsoft SQL Server Tools 17 -> SQL Server Management Studio 17` 
-    + *This may change to version 18 if it's updated.*
-7. Press connect (see image). *Your server name will differ*. 
-
-    <img src="img/ssms-connect-2.jpg" alt="SSMS Connect Window" width="400"/>
-
-7. You're in! Congratulations!
-
-<!--
-## Download and install AdventureWorks
-
-[*AdventureWorks GitHub*](https://github.com/Microsoft/sql-server-samples/blob/master/samples/databases/adventure-works/README.md)
-
-We will **install from a backup**!!! There are multiple options.
-
-1. *Use AdventureWorks 2014.* It is important to ensure that the AdventureWorks version is compatible with the version of SQL Server. The year of AdventureWorks must be less than or equal to the year of SQL Server. No one should run a SQL Server version prior to 2014, so this shouldn't be an issue. AdventureWorks 2014 will work just fine with SQL Server 2017.
--->
-
+2. In the Object Explorer, navigate to the `Databases` node and right-click. Select `Restore Database...`.
+3. Select Device as the Source and click on the ellipses `...` button.
+4. Click `Add`.
+5. Navigate to `C:/Program Files/` and find the `AdventureWorks2017.bak` file. Add the file.
+6. When returned to the main menu, select `OK`.
+7. Within the Object Explorer, you should now see AdventureWorks2017 as a node under `Databases`.
