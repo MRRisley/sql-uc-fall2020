@@ -22,11 +22,11 @@ The AdventureWorks database is a sample SQL Server database built and maintained
     
 3. Select Device as the Source and click on the ellipses `...` button.
 
-    <img src="img/aw-2.jpg" alt="Locate Device Source" width="400">
+    <img src="img/aw-2.jpg" alt="Locate Device Source" width="600">
     
 4. Click `Add`.
 5. Navigate to `C:/Program Files/` and find the `AdventureWorks2017.bak` file. Add the file.
 6. When returned to the main menu, select `OK`.
 7. Within the Object Explorer, you should now see AdventureWorks2017 as a node under `Databases`.
 
-    <img src="img/aw-3.jpg" alt="AdventureWorks Database Icon" width="400">
+    <img src="img/aw-3.jpg" alt="AdventureWorks Database Icon" width="250">
