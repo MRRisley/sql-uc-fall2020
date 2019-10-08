@@ -34,5 +34,5 @@ The AdventureWorks database is a sample SQL Server database built and maintained
 
     <img src="img/aw-3.jpg" alt="AdventureWorks Database Icon" width="250">
 
-
-*Note: It is important to ensure that the AdventureWorks version is compatible with the version of SQL Server. The year of AdventureWorks should be less than or equal to the year of SQL Server. For example, you can run AdventureWorks2014 from SQL Server 2017. MS generally develops backwards-compatible software (thankfully). No one should be running a SQL Server version prior to 2017, so this shouldn't be an issue.**
+## Notes
+1. *It is important to ensure that the AdventureWorks version is compatible with the version of SQL Server. The year of AdventureWorks should be less than or equal to the year of SQL Server. For example, you can run AdventureWorks2014 from SQL Server 2017. MS generally develops backwards-compatible software (thankfully). No one should be running a SQL Server version prior to 2017, so this shouldn't be an issue.**
