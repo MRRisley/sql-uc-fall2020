@@ -37,18 +37,9 @@
     + *There may be small version differences from what we use in class, but they will not impact your work in this course.*
 6. Navigate to the SSMS 17 Application. `Start -> Microsoft SQL Server Tools 17 -> SQL Server Management Studio 17` 
     + *This may change to version 18 if it's updated.*
-7. Press connect (see image). *Your server name will differ*. 
+7. You will have the option to connect, **but you must change the server name to:** `(LocalDB)\MSSQLLOCALDB`. 
 
-    <img src="img/ssms-connect-2.jpg" alt="SSMS Connect Window" width="400"/>
+    <img src="img/ssms-connect-3.jpg" alt="SSMS Connect Window" width="400"/>
 
-7. You're in! Congratulations!
-
-<!--
-## Download and install AdventureWorks
-
-[*AdventureWorks GitHub*](https://github.com/Microsoft/sql-server-samples/blob/master/samples/databases/adventure-works/README.md)
-
-We will **install from a backup**!!! There are multiple options.
-
-1. *Use AdventureWorks 2014.* It is important to ensure that the AdventureWorks version is compatible with the version of SQL Server. The year of AdventureWorks must be less than or equal to the year of SQL Server. No one should run a SQL Server version prior to 2014, so this shouldn't be an issue. AdventureWorks 2014 will work just fine with SQL Server 2017.
--->
+8. After changing the server name, press `Connect`.
+9. You're in! Congratulations!
