@@ -11,7 +11,7 @@
 
 ### Set-up SQL Server Management Studio (SSMS)
 
-3. [AdventureWorks Setup]()
+3. [AdventureWorks Setup](https://github.com/MRRisley/sql-uc-fall2019/blob/master/step-1-aw/readme.md)
 4. Intro to Object Explorer, Connections, etc.
 
 ### *Break*
