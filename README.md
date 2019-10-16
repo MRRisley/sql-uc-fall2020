@@ -3,7 +3,7 @@ This is a repo of materials for IS6030, a SQL course at the University of Cincin
 
 ## Course Materials
 
-+ [Week 1](https://github.com/MRRisley/sql-uc-fall2019/blob/master/week-1.md)
++ [Week 1](https://github.com/MRRisley/sql-uc-fall2019/tree/master/week-1)
 
 ## Course Info
 
