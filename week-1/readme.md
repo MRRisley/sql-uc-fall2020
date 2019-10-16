@@ -16,4 +16,7 @@
 
 ### *Break*
 
-### The `SELECT` Statement
+### The SQL Query
+
+5. Lecture
+6. SQL Practice
