@@ -26,7 +26,7 @@
 5. Lectures
 
     + Intro to SQL ([intro-to-sql.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-1/intro-to-sql.pptx))
-    + Intro to the SQL Query ([intro-to-query.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-1/intro-to-query.pptx))
+    + Intro to the SQL Query ([intro-to-the-query.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-1/intro-to-the-query.pptx))
 
 
 6. SQL Practice
