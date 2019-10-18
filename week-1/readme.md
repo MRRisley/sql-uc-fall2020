@@ -1,6 +1,6 @@
 # Week 1
 
-#### Intro
+### Intro
 
 1. Course Introduction
 
@@ -10,7 +10,7 @@
 
 2. GitHub Introduction
 
-#### Set-up SQL Server Management Studio (SSMS)
+### Set-up SQL Server Management Studio (SSMS)
 
 3. [AdventureWorks Setup](https://github.com/MRRisley/sql-uc-fall2019/blob/master/step-1-aw/readme.md)
 4. Intro to Object Explorer, Connections, etc.
@@ -18,9 +18,9 @@
 
     + Records vs. Fields.
 
-#### *Break*
+### *Break*
 
-#### The SQL Query
+### The SQL Query
 
 5. Lecture
 6. SQL Practice
