@@ -141,3 +141,21 @@ from AdventureWorks2017.person.[address]
 --can we add * to the select list? Why, why not?
 
 
+/* 
+You Try
+
+Use the Employee table in the HumanResources schema.
+
+1. How many records does the table contain?
+2. How many fields does the table contain?
+3. What kind of data does it contain?
+4. Write a query to select the top 10 records for all fields.
+5. Write a query to return all records for the following fields:
+	a. BusinessEntityID re-named to pk
+	b. NationalIDNumber re-named to natnl_id
+	c. Gender
+	d. HireDate re-named to start_date
+6. Write a query to return the minimum and maximum hire date.
+7. From 6, what is the practical implication of these two dates?
+
+*/
