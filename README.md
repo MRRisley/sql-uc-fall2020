@@ -5,7 +5,7 @@ This is a repo of materials for IS6030, a SQL course at the University of Cincin
 
 ## Course Materials
 
-+ [Week 1](week-1)
++ [Week 1](week-1/readme.md)
 
 ## Course Info
 
