@@ -4,7 +4,8 @@
 
 1. Course Introduction
 
-    + Syllabus, Blackboard, Echo360
+    + [Syllabus](https://github.com/MRRisley/sql-uc-fall2019/blob/master/docs/IS6030_003&004_Risley_Syllabus_19FS.pdf)
+    + Blackboard
     + About Me
     + About You
 
