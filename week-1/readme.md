@@ -3,9 +3,9 @@
 #### Intro
 
 1. Course Introduction
-  + Syllabus, Blackboard, Echo360
-  + About Me
-  + About You
+    + Syllabus, Blackboard, Echo360
+    + About Me
+    + About You
 
 2. GitHub Introduction
 
@@ -14,7 +14,7 @@
 3. [AdventureWorks Setup](https://github.com/MRRisley/sql-uc-fall2019/blob/master/step-1-aw/readme.md)
 4. Intro to Object Explorer, Connections, etc.
 5. View your first query and table with `Right Click -> Select Top 1000 Rows`.
-  + Records vs. Fields.
+    + Records vs. Fields.
 
 #### *Break*
 
