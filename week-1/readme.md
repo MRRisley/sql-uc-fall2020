@@ -32,4 +32,4 @@
 6. SQL Practice
 
     + `SELECT` clause intro ([select-clause.sql](https://mrrisley.github.io/sql-uc-fall2019/week-1/select-clause.sql))
-    + `SELECT` & `FROM` ([select-from.sql](https://mrrisley.github.io/sql-uc-fall2019/week-1/select-from.sql))
+    <!-- + `SELECT` & `FROM` ([select-from.sql](https://mrrisley.github.io/sql-uc-fall2019/week-1/select-from.sql)) -->
