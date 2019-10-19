@@ -16,7 +16,7 @@ This is a repo of materials for IS6030, a SQL course at the University of Cincin
 
 ## Prior Course Site
 
-+ https://mrrisley.github.io/SQL
++ [https://mrrisley.github.io/SQL](https://mrrisley.github.io/SQL)
 
 
 
