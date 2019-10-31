@@ -86,7 +86,9 @@ Use the Person table in the Person schema.
 
 1. How many records does the table contain?
 2. How many fields does the table contain?
-3.  
+3. What are the first 10 records alphabetically for the FirstName field? 
+4. What does the result in (3.) tell us about "typical" data?
+5. 
 
 
 What kind of data does it contain?
