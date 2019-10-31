@@ -2,7 +2,8 @@
 
 	/* Recall that: 
 	1. The WHERE filters records using logic.
-	2. You must refer to original field names in the WHERE clause, but it
+	2. It always follows the FROM clause.
+	3. You must refer to original field names in the WHERE clause, but it
      is not required in the ORDER BY.
 	*/
 
@@ -10,71 +11,94 @@
 
 
 
-/* ORDER BY: ASCENDING 
+/* WHERE with equivalance logic.
 
-1. What is the first City alphabetically in Person.Address?
-
-*/
-
-select *
-from adventureworks2017.person.address
-order by city
-
-select top 1 city
-from adventureworks2017.person.address
-order by city
-
-select top 10 city, *
-from adventureworks2017.person.address
-order by city 
---note the error with ORDER BY! 
---"ambiguous column" means that there is more than one field that shares the same name
-
-select top 10 city 'dup_city_field', *
-from adventureworks2017.person.address
-order by dup_city_field 
-
-select top 10 city 'dup_city_field', *
-from adventureworks2017.person.address
-order by city
---what field is used to sort?
---what happens if we remove * from the select field?
-
-select top 10 AddressID
-from adventureworks2017.person.address
-order by city
---will this work?
-
-
-
-
-
-/* ORDER BY: DESCENDING 
-
-1. What is the last City alphabetically in Person.Address?
+1. How many records exist in the [Person].[Person] table where the FirstName field is Aaron?
+2. How many people received the email promotion coded 2 in the table?
+3. What is the alphabetically first last name that received an email promotion coded 0?
 
 */
 
-select top 10 city
-from adventureworks2017.person.address
-order by city desc
+select * 
+from adventureworks2017.person.person
+where firstname = 'aaron'
+
+	/* Notes:
+	
+	(1) WHERE clause always comes after the FROM clause.
+	(2) SQL is not case sensitive by default.
+	(3) Strings, or character values, are always enclosed in single quotations.
+	
+	*/
 
 
-/* ORDER BY: Multi-Level Sort
+select * 
+from adventureworks2017.person.person
+where emailpromotion = 2
+--Will the query work if we treat the number 2 as a string?
+
+select * 
+from adventureworks2017.person.person
+where emailpromotion = 0
+--Where should we put the ORDER BY?
+
+
+
+
+
+
+/* WHERE with compound logic.
+
+1. How many people with a first name of Michael received the email promotion coded 2 in the table?
+2. How many people with a first name of Michael or Mark received the email promotion coded 2 in the table? 
+
 */
 
-select top 100 city, postalcode, addressline1
-from AdventureWorks2017.person.[address]
-order by city, postalcode
+select * 
+from adventureworks2017.person.person
+where emailpromotion = 2
+and firstname = 'michael'
+--AND means that both conditions must be True.
 
-select top 100 city, postalcode, addressline1
-from AdventureWorks2017.person.[address]
-order by city, postalcode, addressline1
+select * 
+from adventureworks2017.person.person
+where emailpromotion = 2
+and firstname = 'michael'
+or firstname = 'mark'
+--OR means that at least one condition must be True.
 
-select top 100 city, postalcode, addressline1
-from AdventureWorks2017.person.[address]
-order by city desc, postalcode desc, addressline1
---what is the sort order for addressline1?
+select * 
+from adventureworks2017.person.person
+where firstname = 'michael'
+or firstname = 'mark'
+and emailpromotion = 2
+--Does order matter?
+
+select * 
+from adventureworks2017.person.person
+where (firstname = 'michael'
+or firstname = 'mark')
+and emailpromotion = 2
+--ALWAYS put quotations around your OR logic!
+--Go through each example to explain why all 3 return something different.
+--This becomes VERY important with NULL values (more later).
+
+select * 
+from adventureworks2017.person.person
+where firstname in ('michael', 'mark')
+and emailpromotion = 2
+--IN keyword can be a more straightforward solution for most OR logic.
+
+
+
+
+
+/* WHERE with 
+
+1. How many people with a first name of Michael received the email promotion coded 2 in the table?
+2. How many people with a first name of Michael or Mark received the email promotion coded 2 in the table? 
+
+*/
 
 
 
