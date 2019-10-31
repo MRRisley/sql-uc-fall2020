@@ -7,7 +7,10 @@
      is not required in the ORDER BY.
 	*/
 
-
+/* 
+NOTE: there are many uses and examples of logic not shown here. But, these examples
+cover roughly 85% of the fundamentals of my work queries. 
+*/
 
 
 
@@ -131,6 +134,7 @@ and firstname not in ('michael', 'mark')
 1. How many records in the [Person].[Person] table have a BusinessEntityID greater than 1000?
 2. How many records in the [Person].[Person] table were modified on or after January 1, 2014?
 3. How many records in the [Person].[Person] table were modified in 1Q2014?
+4. How many records in the [Person].[Person] table were not modified in 1Q2014?
 
 */
 
@@ -144,6 +148,7 @@ from adventureworks2017.person.person
 where modifieddate >= '1/1/2014'
 --note: dates use single quotations as well
 
+
 select * 
 from adventureworks2017.person.person
 where modifieddate >= '1/1/2014'
@@ -153,6 +158,20 @@ select *
 from adventureworks2017.person.person
 where modifieddate between '1/1/2014' and '3/31/2014'
 --between works will with dates
+
+
+select * 
+from adventureworks2017.person.person
+where modifieddate < '1/1/2014'
+and modifieddate >= '4/1/2014'
+
+select * 
+from adventureworks2017.person.person
+where modifieddate not between '1/1/2014' and '3/31/2014'
+
+
+
+
 
 /* 
 You Try
