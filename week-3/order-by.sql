@@ -1,9 +1,8 @@
-/* ORDERY BY and WHERE Clauses */
+/* ORDER BY Clause */
 
 	/* Recall that: 
 	1. An ORDER BY sorts records in ascending order by default.
-	2. The WHERE filters records using logic.
-	3. You must refer to original field names in the WHERE clause, but it
+	2. You must refer to original field names in the WHERE clause, but it
      is not required in the ORDER BY.
 	*/
 
