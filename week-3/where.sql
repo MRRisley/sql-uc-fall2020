@@ -46,7 +46,6 @@ where emailpromotion = 0
 
 
 
-
 /* WHERE with compound logic.
 
 1. How many people with a first name of Michael received the email promotion coded 2 in the table?
@@ -93,16 +92,67 @@ and emailpromotion = 2
 
 
 
-/* WHERE with 
+/* WHERE with non-equivalance logic.
 
-1. How many people with a first name of Michael received the email promotion coded 2 in the table?
-2. How many people with a first name of Michael or Mark received the email promotion coded 2 in the table? 
+1. How many records exist in the [Person].[Person] table where the FirstName field is not Aaron?
+2. How many people did not receive the email promotion coded 2 in the table?
+3. How many people received the email promotion coded 2 in the table who were not named Michael or Mark? 
 
 */
 
+select * 
+from adventureworks2017.person.person
+where firstname <> 'michael'
+-- <> does not equal
+-- != will work as well
+
+select * 
+from adventureworks2017.person.person
+where emailpromotion != 2
+
+select * 
+from adventureworks2017.person.person
+where emailpromotion = 2
+and not (firstname = 'michael' or firstname = 'mark') 
+-- note the parentheses around the OR logic
+-- NOT before the or logic negates it
+
+select * 
+from adventureworks2017.person.person
+where emailpromotion = 2
+and firstname not in ('michael', 'mark')
 
 
 
+
+
+/* WHERE with comparison logic.
+
+1. How many records in the [Person].[Person] table have a BusinessEntityID greater than 1000?
+2. How many records in the [Person].[Person] table were modified on or after January 1, 2014?
+3. How many records in the [Person].[Person] table were modified in 1Q2014?
+
+*/
+
+select * 
+from adventureworks2017.person.person
+where businessentityid > 1000
+
+
+select * 
+from adventureworks2017.person.person
+where modifieddate >= '1/1/2014'
+--note: dates use single quotations as well
+
+select * 
+from adventureworks2017.person.person
+where modifieddate >= '1/1/2014'
+and modifieddate < '4/1/2014'
+
+select * 
+from adventureworks2017.person.person
+where modifieddate between '1/1/2014' and '3/31/2014'
+--between works will with dates
 
 /* 
 You Try
