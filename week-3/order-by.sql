@@ -56,7 +56,9 @@ order by city
 
 */
 
-
+select top 10 city
+from adventureworks2017.person.address
+order by city desc
 
 
 /* ORDER BY: Multi-Level Sort
@@ -86,19 +88,12 @@ Use the Person table in the Person schema.
 
 1. How many records does the table contain?
 2. How many fields does the table contain?
-3. What are the first 10 records alphabetically for the FirstName field? 
+3. What are the first 10 records alphabetically for the FirstName field? Return only the FirstName field in the output.
 4. What does the result in (3.) tell us about "typical" data?
-5. 
+5. Copy/paste the query from (3.). Edit the query to select the first 100 records and add the LastName field to the output. 
+6. Referring to the output from the query in (5.), is the LastName field sorted in the output? Should we expect it to be?
+7. Copy/paste the query from (5.). Edit the query to order first by LastName and then by FirstName. 
 
-
-What kind of data does it contain?
-4. Write a query to select the top 10 records for all fields.
-5. Write a query to return all records for the following fields:
-	a. BusinessEntityID re-named to pk
-	b. NationalIDNumber re-named to natnl_id
-	c. Gender
-	d. HireDate re-named to start_date
-6. Write a query to return the minimum and maximum hire date.
-7. From 6, what is the practical implication of these two dates?
+If you finish early: using Google, try to find if the [Person].[Person] table is indexed and on what fields.
 
 */
