@@ -24,6 +24,6 @@
 
 2. SQL Practice
 
-    + `WHERE` and `ORDER BY` <!-- ([select-from.sql](https://mrrisley.github.io/sql-uc-fall2019/week-3/select-from.sql)) -->
-
+    + `ORDER BY` ([order-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-3/order-by.sql)
+    + `WHERE` 
 
