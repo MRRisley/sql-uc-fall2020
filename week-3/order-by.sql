@@ -2,8 +2,9 @@
 
 	/* Recall that: 
 	1. An ORDER BY sorts records in ascending order by default.
-	2. You must refer to original field names in the WHERE clause, but it
-     is not required in the ORDER BY.
+	2. It is the last clause in the query.
+	3. You must refer to original field names in the WHERE clause, but it
+     	   is not required in the ORDER BY.
 	*/
 
 
@@ -12,38 +13,38 @@
 
 /* ORDER BY: ASCENDING 
 
-1. What is the first City alphabetically in Person.Address?
+What is the first City alphabetically in Person.Address?
 
 */
 
-select *
-from adventureworks2017.person.address
-order by city
+	select *
+	from adventureworks2017.person.address
+	order by city
 
-select top 1 city
-from adventureworks2017.person.address
-order by city
+	select top 1 city
+	from adventureworks2017.person.address
+	order by city
 
-select top 10 city, *
-from adventureworks2017.person.address
-order by city 
---note the error with ORDER BY! 
---"ambiguous column" means that there is more than one field that shares the same name
+	select top 10 city, *
+	from adventureworks2017.person.address
+	order by city 
+	--note the error with ORDER BY! 
+	--"ambiguous column" means that there is more than one field that shares the same name
 
-select top 10 city 'dup_city_field', *
-from adventureworks2017.person.address
-order by dup_city_field 
+	select top 10 city 'dup_city_field', *
+	from adventureworks2017.person.address
+	order by dup_city_field 
 
-select top 10 city 'dup_city_field', *
-from adventureworks2017.person.address
-order by city
---what field is used to sort?
---what happens if we remove * from the select field?
+	select top 10 city 'dup_city_field', *
+	from adventureworks2017.person.address
+	order by city
+	--what field is used to sort?
+	--what happens if we remove * from the select field?
 
-select top 10 AddressID
-from adventureworks2017.person.address
-order by city
---will this work?
+	select top 10 AddressID
+	from adventureworks2017.person.address
+	order by city
+	--will this work?
 
 
 
@@ -51,30 +52,32 @@ order by city
 
 /* ORDER BY: DESCENDING 
 
-1. What is the last City alphabetically in Person.Address?
+What is the last City alphabetically in Person.Address?
 
 */
 
-select top 10 city
-from adventureworks2017.person.address
-order by city desc
+	select top 10 city
+	from adventureworks2017.person.address
+	order by city desc
 
 
-/* ORDER BY: Multi-Level Sort
-*/
 
-select top 100 city, postalcode, addressline1
-from AdventureWorks2017.person.[address]
-order by city, postalcode
 
-select top 100 city, postalcode, addressline1
-from AdventureWorks2017.person.[address]
-order by city, postalcode, addressline1
 
-select top 100 city, postalcode, addressline1
-from AdventureWorks2017.person.[address]
-order by city desc, postalcode desc, addressline1
---what is the sort order for addressline1?
+/* ORDER BY: Multi-Level Sort */
+
+	select top 100 city, postalcode, addressline1
+	from AdventureWorks2017.person.[address]
+	order by city, postalcode
+
+	select top 100 city, postalcode, addressline1
+	from AdventureWorks2017.person.[address]
+	order by city, postalcode, addressline1
+
+	select top 100 city, postalcode, addressline1
+	from AdventureWorks2017.person.[address]
+	order by city desc, postalcode desc, addressline1
+	--what is the sort order for addressline1?
 
 
 
