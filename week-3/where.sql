@@ -4,7 +4,7 @@
 	1. The WHERE filters records using logic.
 	2. It always follows the FROM clause.
 	3. You must refer to original field names in the WHERE clause, but it
-     is not required in the ORDER BY.
+           is not required in the ORDER BY.
 	*/
 
 /* 
@@ -141,7 +141,7 @@ cover roughly 85% of the fundamentals of my work queries.
 1. How many records in the [Person].[Person] table have a BusinessEntityID greater than 1000?
 2. How many records in the [Person].[Person] table were modified on or after January 1, 2014?
 3. How many records in the [Person].[Person] table were modified in 1Q2014?
-4. How many records in the [Person].[Person] table were not modified in 1Q2014?
+4. How many records in the [Person].[Person] table were not modified in 1Q2014? Order by last name in ascending order.
 
 */
 
@@ -168,15 +168,7 @@ cover roughly 85% of the fundamentals of my work queries.
 	--between works will with dates
 
 	/* Ex 4 */
-	select * 
-	from adventureworks2017.person.person
-	where modifieddate < '1/1/2014'
-	and modifieddate >= '4/1/2014'
-
-	select * 
-	from adventureworks2017.person.person
-	where modifieddate not between '1/1/2014' and '3/31/2014'
-
+	--Complete with class participation.
 
 
 
@@ -186,14 +178,24 @@ You Try
 
 Use the Address table in the Person schema.
 
-1. How many records does the table contain?
-2. How many fields does the table contain?
-3. What are the first 10 records alphabetically for the FirstName field? Return only the FirstName field in the output.
-4. What does the result in (3.) tell us about "typical" data?
-5. Copy/paste the query from (3.). Edit the query to select the first 100 records and add the LastName field to the output. 
-6. Referring to the output from the query in (5.), is the LastName field sorted in the output? Should we expect it to be?
-7. Copy/paste the query from (5.). Edit the query to order first by LastName and then by FirstName. 
+1. How many records have a StateProvinceID of 9?
+2. How many records have PostalCode of 85004? Note: the PostalCode field is a character field.
+3. How many records have a StateProvinceID of 9, 10, or 11?
+4. How many records do not have a StateProvinceID less than or equal to 50?
 
-If you finish early: using Google, try to find if the [Person].[Person] table is indexed and on what fields.
+Use the Person table in the Person schema.
+
+5. How many records were modified in either 1Q2014 or 1Q2015?
+6. How many records have a value of 'SC' for PersonType and a last name of Adams?
+7. How many records have a value of other than 'SC' or 'EM for PersonType and received the email promotion coded with the value 1?
+8. Write 3 queries that:
+	a. Count the total number of records.
+	b. Count the number of records that have a value of 'Mr.' for the field [Title].
+	c. Count the number of records that do not have a value of 'Mr.' for the field [Title].
+9. Referring to the answers in (8), do the counts in (b) and (c) sum to the total number of records (a)? 
+   Browse through values for the field [Title] and provide the best guess of what value is not being counted.
+
+If you finish early: using Google, find the logic/syntax required to count the remaining rows from (8). 
+Then, using Google, try to find the data types for the [Person].[Address] table using SQL/SSMS.
 
 */
