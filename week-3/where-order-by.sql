@@ -11,7 +11,7 @@
 
 
 
-/* ORDER BY: ASCENDING */ 
+/* ORDER BY: ASCENDING 
 
 1. What is the first City alphabetically in Person.Address?
 
@@ -31,6 +31,20 @@ order by city
 --note the error with ORDER BY! 
 --"ambiguous column" means that there is more than one field that shares the same name
 
+select top 10 city 'dup_city_field', *
+from adventureworks2017.person.address
+order by dup_city_field 
+
+select top 10 city 'dup_city_field', *
+from adventureworks2017.person.address
+order by city
+--what field is used to sort?
+--what happens if we remove * from the select field?
+
+select top 10 AddressID
+from adventureworks2017.person.address
+order by city
+--will this work?
 
 
 /* TOP 
