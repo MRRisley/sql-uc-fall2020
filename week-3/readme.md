@@ -24,6 +24,6 @@
 
 2. SQL Practice
 
-    + `ORDER BY` ([order-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-3/order-by.sql)
+    + `ORDER BY` ([order-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-3/order-by.sql))
     + `WHERE` 
 
