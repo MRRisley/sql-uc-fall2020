@@ -20,7 +20,7 @@
 
 1. Lectures
     
-    + Filter and Sort with the SQL Query <!-- ([intro-to-the-query.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-1/intro-to-the-query.pptx)) -->
+    + Filter and Sort with the SQL Query ([where-order-by.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-3/where-order-by.pptx))
 
 2. SQL Practice
 
