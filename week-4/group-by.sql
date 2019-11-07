@@ -1,10 +1,12 @@
 /* GROUP BY Clause */
 
 	/* Recall that: 
-	1. The WHERE filters records using logic.
-	2. It always follows the FROM clause.
-	3. You must refer to original field names in the WHERE clause, but it
-           is not required in the ORDER BY.
+	1. The GROUP BY clause lists items from the select list over which aggregations are performed.
+	2. It always follows the WHERE clause (if it exists).
+	3. The number of records returned is determined by the number of unique combinations of
+		values among items within the GROUP BY.
+	4. HAVING filters the results after aggregation. WHERE filters records before aggregation.
+	5. You must refer to original field names in the GROUP BY and HAVING clause.
 	*/
 
 
