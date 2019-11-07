@@ -177,3 +177,17 @@ Table: production.transactionhistory
 	where actualcost >= 0
 	
 	order by referenceorderid
+	
+
+/* You Try
+
+Use table person.name for questions 1-5.
+
+1.) How many records exist for each value of FirstName?
+2.) What is the most common value of FirstName? The least common?
+3.) How many FirstName and LastName combinations have more than one record?
+4.) How many records exist for each Title? Order results alphabetically. Where do NULL values
+	appear in the output by default?
+5.) How many records exist for each PersonType and EmailPromotion? Order results alphabetically.
+
+
