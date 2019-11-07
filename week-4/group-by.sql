@@ -13,6 +13,8 @@
 
 /* Aggregation without grouping.
 
+Table: person.[address]
+
 1. How many records are in the table?
 2. How many records are in the table that were modified after June 1, 2014?
 3. How many records have a value of 'Cincinnati' for the field City?
@@ -39,6 +41,8 @@
 
 
 /* Aggregation with grouping by one item.
+
+Table: person.[address]
 
 1. How many records exist for each StateProvinceID? Sort by StateProvinceID in ascending order.
 2. What value of StateProvinceID has the most number of records?
@@ -76,6 +80,8 @@
 
 /* Aggregation with grouping by multiple items.
 
+Table: person.[address]
+
 1. How many records exist for each StateProvinceID and City? Sort by StateProvinceID, then City in ascending order.
 2. What value of City has the most number of records?
 3. What value of StateProvinceID and City has the most number of records?
@@ -110,6 +116,8 @@
 
 /* Filtering aggregated records.
 
+Table: person.[address]
+
 1. How many records exist for each StateProvinceID and City? Exlude State/City combination with fewer than 5 records.
 	Sort by StateProvinceID, then City in ascending order.
 2. How many records exist for each StateProvinceID and City with a City whose name begins with an A? 
@@ -137,3 +145,35 @@
 	group by stateprovinceid, city
 	--having --complete
 	order by stateprovinceid, city
+
+
+
+
+
+/* Multiple Aggregations
+
+Table: production.transactionhistory 
+
+1. Explore table.
+2. Return: the total quantity within each order, the total cost of each order, and the average
+	cost of each order.
+	The field for each order is ReferenceOrderID. The records each represent a line on an order. 
+	Note that total cost is the product of Quantity and ActualCost.
+	Exclude records with zero cost.
+	Sort results by ReferenceOrderID in ascending order.
+
+*/
+
+
+	/* Ex 2 */
+	select
+	referenceorderid
+	,sum(quantity) [quantity]
+	,sum(quantity*actualcost) [total_cost]
+	--,average cost?
+	
+	from production.transactionhistory
+	
+	where actualcost >= 0
+	
+	order by referenceorderid
