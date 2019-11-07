@@ -88,8 +88,17 @@ group by city
 
 /* Filtering aggregated records.
 
-1. How many records exist for each StateProvinceID and City? Exlude State/City Sort by StateProvinceID, then City in ascending order.
+1. How many records exist for each StateProvinceID and City? Exlude State/City combination with fewer than 5 records.
+	Sort by StateProvinceID, then City in ascending order.
 2. What value of City has the most number of records?
-3. What value of StateProvinceID and City has the most number of records?
+3. How many records exist for each City with StateProvinceID of 14? Order by City in alphabetical order.
 
 */
+
+select stateprovinceid,
+	city,
+	count(*) as record_count
+from person.[address]
+group by stateprovinceid, city
+	having count(*) >= 5
+order by stateprovinceid, city
