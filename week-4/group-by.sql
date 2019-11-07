@@ -19,15 +19,23 @@
 
 */
 
-select count(*) as record_count from person.[address]
+	/* Ex 1 */
+	select count(*) as record_count from person.[address]
 
-select count(*) as record_count 
-from person.[address]
-where modifieddate >= '6/1/2014'
 
-select count(*) as record_count 
-from person.[address]
-where city='Cincinnati'
+	/* Ex 2 */
+	select count(*) as record_count 
+	from person.[address]
+	where modifieddate >= '6/1/2014'
+
+
+	/* Ex 3 */
+	select count(*) as record_count 
+	from person.[address]
+	where city='Cincinnati'
+
+
+
 
 
 /* Aggregation with grouping by one item.
@@ -37,24 +45,31 @@ where city='Cincinnati'
 3. How many records exist for each City with StateProvinceID of 14? Order by City in alphabetical order.
 
 */
+	
+	/* Ex 1 */
+	select stateprovinceid, count(*) as record_count 
+	from person.[address]
+	group by stateprovinceid
+	order by stateprovinceid
 
-select stateprovinceid, count(*) as record_count 
-from person.[address]
-group by stateprovinceid
-order by stateprovinceid
 
-select stateprovinceid, count(*) as record_count 
-from person.[address]
-group by stateprovinceid
---order by --complete
+	/* Ex 2 */
+	select stateprovinceid, count(*) as record_count 
+	from person.[address]
+	group by stateprovinceid
+	--order by --complete
 
-select city, count(*) as record_count 
-from person.[address]
---where --complete
-group by city
---order by --complete
---(1) What do we do if we want to include the StateProvinceID as part of the select list?
---(2) Would it make sense to include AddressLine1 in the query?
+
+	/* Ex 3 */
+	select city, count(*) as record_count 
+	from person.[address]
+	--where --complete
+	group by city
+	--order by --complete
+	
+	--(1) What do we do if we want to include the StateProvinceID as part of the select list?
+	--(2) Would it make sense to include AddressLine1 in the query?
+
 
 
 
@@ -67,21 +82,28 @@ group by city
 
 */
 
-select stateprovinceid, 
-	city, 
-	count(*) as record_count 
-from person.[address]
-group by stateprovinceid, city
-order by stateprovinceid, city
 
-select 
-	city, 
-	count(*) as record_count 
-from person.[address]
-group by city
---order by --complete
+	/* Ex 1 */
+	select stateprovinceid, 
+		city, 
+		count(*) as record_count 
+	from person.[address]
+	group by stateprovinceid, city
+	order by stateprovinceid, city
 
---complete #3 in class
+
+	/* Ex 2 */
+	select 
+		city, 
+		count(*) as record_count 
+	from person.[address]
+	group by city
+	--order by --complete
+
+
+	/* Ex 3 */
+	--complete in class
+
 
 
 
@@ -96,20 +118,22 @@ group by city
 */
 
 
-select stateprovinceid,
-	city,
-	count(*) as record_count
-from person.[address]
-group by stateprovinceid, city
-	having count(*) >= 5
-order by stateprovinceid, city
+	/* Ex 1 */
+	select stateprovinceid,
+		city,
+		count(*) as record_count
+	from person.[address]
+	group by stateprovinceid, city
+		having count(*) >= 5
+	order by stateprovinceid, city
 
 
-select stateprovinceid,
-	city,
-	count(*) as record_count
-from person.[address]
---where --complete
-group by stateprovinceid, city
---having --complete
-order by stateprovinceid, city
+	/* Ex 2 */
+	select stateprovinceid,
+		city,
+		count(*) as record_count
+	from person.[address]
+	--where --complete
+	group by stateprovinceid, city
+	--having --complete
+	order by stateprovinceid, city
