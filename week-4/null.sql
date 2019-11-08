@@ -8,7 +8,7 @@
 
 
 
-/*
+/* The NULL
 
 Table: person.person
 
@@ -45,6 +45,15 @@ Table: person.person
 	where title <> 'Mr.'
 	group by title
 
+	/* OR */
+
+	select
+	title,
+	count(*) as record_count 
+	from person.person
+	group by title having title <> 'Mr.'
+	--how might this impact the query plan?
+	
 
 	/* Ex 4 */
 	select
@@ -53,3 +62,35 @@ Table: person.person
 	from person.person
 	where (title <> 'Mr.' or title is null)
 	group by title
+	
+	
+/* isnull()
+
+Table: person.person
+
+1. Count the number of records for each value in the field Title. 
+	Use the isnull() function to return the value 'unknown' for NULL.
+
+*/
+
+	/* Ex 1 */
+	select
+	isnull(title, 'unknown'),
+	count(*) as record_count
+	from person.person
+	group by isnull(title, 'unknown')
+
+
+
+
+
+/* nullif */
+
+select 1/0
+--error
+
+select 1/nullif(0, 0)
+--nullif(0, 0) returns NULL
+
+select 1/null
+--1 divided by NULL is NULL
