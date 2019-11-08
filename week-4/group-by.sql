@@ -190,4 +190,13 @@ Use table person.name for questions 1-5.
 	appear in the output by default?
 5.) How many records exist for each PersonType and EmailPromotion? Order results alphabetically.
 
+Use table production.productinventory for questions 6-9.
+
+6.) How many records exist for each ProductID? Sort by ProductID in ascending order.
+7.) How many ProductIDs have more than one record? HINT: Modify #6 with a HAVING clause. Sort by ProductID in ascending order.
+8.) What is the quantity of products for each LocationID? Sort by LocationID in ascending order.
+9.) What is the quantity of products for each LocationID, Shelf, and Bin? 
+	Sort by LocationID, Shelf, and then Bin all in ascending order.
+
+*/
 
