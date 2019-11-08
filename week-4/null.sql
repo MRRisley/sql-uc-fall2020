@@ -1,40 +1,72 @@
 /* NULL */
 
 	/* Recall that: 
-	1. The GROUP BY clause lists items from the select list over which aggregations are performed.
-	2. It always follows the WHERE clause (if it exists).
-	3. The number of records returned is determined by the number of unique combinations of
-		values among items within the GROUP BY.
-	4. HAVING filters the results after aggregation. WHERE filters records before aggregation.
-	5. You must refer to original field names in the GROUP BY and HAVING clause.
+	1. SQL has three possible values when evaluating logic: TRUE, FALSE, or NULL.
+	2. NULL values represent missing/unknown data and cannot evaluate to TRUE or FALSE.
+	3. Mostly an issue with negative statements. DOES NOT EQUAL will not return NULL values.
 	*/
 
 
 
-/* Aggregation without grouping.
+/* Part A
 
-Table: person.[address]
+Table: person.person
 
-1. How many records are in the table?
-2. How many records are in the table that were modified after June 1, 2014?
-3. How many records have a value of 'Cincinnati' for the field City?
+1. How many records in the table have a value other than 'Mr.'? Include NULL values. 
+2. Count the number of records for each value in the field Title.
+3. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
+	Do not explicitly include NULL values.
+4. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
+	Include NULL values.
 
 */
 
+
 	/* Ex 1 */
-	select count(*) as record_count from person.[address]
+	select
+	title,
+	count(*) as record_count
+	from person.person
+	group by title
 
 
 	/* Ex 2 */
-	select count(*) as record_count 
-	from person.[address]
-	where modifieddate >= '6/1/2014'
+	select 
+	count(*) as record_count 
+	from person.person
+	where (title <> 'Mr.' or title is null)
 
 
 	/* Ex 3 */
-	select count(*) as record_count 
-	from person.[address]
-	where city='Cincinnati'
+	select
+	title,
+	count(*) as record_count 
+	from person.person
+	where title <> 'Mr.'
+	group by title
+
+
+	/* Ex 4 */
+	select
+	title,
+	count(*) as record_count 
+	from person.person
+	where (title <> 'Mr.' or title is null)
+	group by title
 
 
 
+
+
+/* Part B
+
+Table: person.person
+
+1. How many records in the table have a value other than 'Mr.'? Include NULL values. 
+2. Count the number of records for each value in the field Title.
+3. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
+	Do not explicitly include NULL values.
+4. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
+	Include NULL values.
+
+*/
