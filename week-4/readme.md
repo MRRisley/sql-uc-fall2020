@@ -14,7 +14,7 @@
 #### 4. `NULL` 
 
   + *Lecture:* The SQL *NULL* ([sql-null.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-4/sql-null.pptx))
-  + *SQL Practice:* ([null.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.sql))
+  + *SQL Practice:* ([null.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/null.sql))
 
 #### 5. Discuss Midterm
 
