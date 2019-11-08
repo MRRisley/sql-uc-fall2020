@@ -8,7 +8,7 @@
 
 
 
-/* Part A
+/*
 
 Table: person.person
 
@@ -53,20 +53,3 @@ Table: person.person
 	from person.person
 	where (title <> 'Mr.' or title is null)
 	group by title
-
-
-
-
-
-/* Part B
-
-Table: person.person
-
-1. How many records in the table have a value other than 'Mr.'? Include NULL values. 
-2. Count the number of records for each value in the field Title.
-3. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
-	Do not explicitly include NULL values.
-4. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
-	Include NULL values.
-
-*/
