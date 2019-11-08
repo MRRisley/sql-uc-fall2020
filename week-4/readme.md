@@ -9,12 +9,12 @@
 #### 3. `GROUP BY` 
 
   + *Lecture:* Aggregate with the SQL Query ([group-by.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.pptx))
-  + *SQL Practice:* `GROUP-BY` ([group-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.sql))
+  + *SQL Practice:* ([group-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.sql))
 
 #### 4. `NULL` 
 
-  + *Lecture:* Aggregate with the SQL Query ([group-by.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.pptx))
-  + *SQL Practice:* `GROUP-BY` ([group-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.sql))
+  + *Lecture:* The SQL *NULL* ([sql-null.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-4/sql-null.pptx))
+  + *SQL Practice:* ([null.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.sql))
 
 #### 5. Discuss Midterm
 
