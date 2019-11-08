@@ -14,8 +14,8 @@
 
 #### `GROUP BY` (cont'd)
 
-  + *SQL Practice:* `GROUP-BY` ([where-order-by.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-3/where-order-by.pptx))
+  + *SQL Practice:* `GROUP-BY` ([group-by.sql](https://mrrisley.github.io/sql-uc-fall2019/week-4/group-by.sql))
 
-#### `NULL`
+#### Discuss Midterm
 
 
