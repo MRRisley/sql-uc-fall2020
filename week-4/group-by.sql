@@ -181,7 +181,7 @@ Table: production.transactionhistory
 
 /* You Try
 
-Use table person.name for questions 1-5.
+Use table person.person for questions 1-5.
 
 1.) How many records exist for each value of FirstName?
 2.) What is the most common value of FirstName? The least common?
