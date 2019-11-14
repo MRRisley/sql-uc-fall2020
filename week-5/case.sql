@@ -8,60 +8,27 @@
 
 
 
-/* CASE:
+/* Two-value CASE:
 
-Table: person.person
+Table: humanresources.employee
 
-1. How many records in the table have a value other than 'Mr.'? Include NULL values. 
-2. Count the number of records for each value in the field Title.
-3. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
-	Do not explicitly include NULL values.
-4. Count the number of records for each value in the field Title that does not have the value of 'Mr.' 
-	Include NULL values.
+1. Using the field vacationhours, return a column that classifies whether the value in the
+	field is greater than or equal to 2 weeks (80 days) or less than. Include the 
+	BusinessEntityID field (as an employee ID #) as well as the original VacationHours field.
+	Order results by most vacation remaining to least.
 
 */
 
 
 	/* Ex 1 */
-	select
-	title,
-	count(*) as record_count
-	from person.person
-	group by title
-
-
-	/* Ex 2 */
 	select 
-	count(*) as record_count 
-	from person.person
-	where (title <> 'Mr.' or title is null)
-
-
-	/* Ex 3 */
-	select
-	title,
-	count(*) as record_count 
-	from person.person
-	where title <> 'Mr.'
-	group by title
-
-	/* OR */
-
-	select
-	title,
-	count(*) as record_count 
-	from person.person
-	group by title having title <> 'Mr.'
-	--how might this impact the query plan?
+	businessentityid as [emp_id],
+	vacationhours,
+	case when vacationhours >= 80 then 'GTE 2 wks'
+		else 'LT 2 wks' end as [wks_vacation]
+	from humanresources.employee
+	order by vacationhours desc
 	
-
-	/* Ex 4 */
-	select
-	title,
-	count(*) as record_count 
-	from person.person
-	where (title <> 'Mr.' or title is null)
-	group by title
 	
 	
 /* isnull()
