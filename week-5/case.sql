@@ -13,7 +13,7 @@
 Table: humanresources.employee
 
 1. Using the field vacationhours, return a column that classifies whether the value in the
-	field is greater than or equal to 2 weeks (80 days) or less than. Include the 
+	field is greater than or equal to 2 weeks (80 hours) or less than 2 weeks. Include the 
 	BusinessEntityID field (as an employee ID #) as well as the original VacationHours field.
 	Order results by most vacation remaining to least.
 2. Using the logic from query 1, count the number of employees that fall within each bucket.
@@ -56,9 +56,10 @@ Table: humanresources.employee
 Table: person.person
 
 1. Using the field vacationhours, return a column that classifies whether the value in the
-	field is greater than or equal to 2 weeks (80 days) less than 80 days, or other. Include the 
+	field is greater than or equal to 2 weeks (80 hours), less than 2 weeks, or other. Include the 
 	BusinessEntityID field (as an employee ID #) as well as the original VacationHours field.
 	Order results by most vacation remaining to least.
+2. Using #1 as a template, include another return value for when the vacation hours are between 1 and 2 weeks.
 
 */
 
@@ -67,36 +68,13 @@ Table: person.person
 	businessentityid as [emp_id],
 	vacationhours,
 	case when vacationhours >= 80 then 'GTE 2 wks'
-		when vacation hours < 90 then 'LT 2 wks' 
+		when vacation hours < 80 then 'LT 2 wks' 
 		else 'other' end as [wks_vacation]
 	from humanresources.employee
 	order by vacationhours desc
 	--Mind the NULL! Note this is the safest way to treat your data.
 	--Know your ELSE! Make sure you're sure you account for all possibilities.
 	
-	/* Ex 1 */
-	select 
-	businessentityid as [emp_id],
-	vacationhours,
-	case when vacationhours >= 80 then 'GTE 2 wks'
-		when vacation hours < 90 then 'LT 2 wks' 
-		else 'other' end as [wks_vacation]
-	from humanresources.employee
-	order by vacationhours desc
-	--Mind the NULL! Note this is the safest way to treat your data.
-	--Know your ELSE! Make sure you're sure you account for all possibilities.	
-	
-
-
-
-
-/* nullif */
-
-select 1/0
---error
-
-select 1/nullif(0, 0)
---nullif(0, 0) returns NULL
-
-select 1/null
---1 divided by NULL is NULL
+	/* Ex 2 */
+	--Complete in class.
+	--Show why you do not need to use the AND operator.	
