@@ -1,6 +1,9 @@
 # Week 5
 
-#### 1. Pre-Midterm Questions
+#### 1. Pre-Midterm
+
+  + Review answers to assessments.
+  + Questions?
 
 #### 2. Midterm
 
