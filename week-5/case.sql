@@ -78,3 +78,21 @@ Table: person.person
 	/* Ex 2 */
 	--Complete in class.
 	--Show why you do not need to use the AND operator.	
+
+
+
+
+/* You Try
+
+1.) Use the table [Person].[StateProvince] to select the first 5 rows orderd by StateProvinceID.
+2.) Count how many records in [Person].[Address] have a StateProvinceID of 1-5. Restrict the
+	future queries to these values.
+3.) Using a CASE expression, return the [CountryRegionCode] values in [Person].[StateProvince] for each StateProvinceId.
+	Keep StateProvinceID in the select list.
+4.) Copy/paste the query from #3. Remove the StateProvinceID from the SELECT list and count the number of records 
+	for each CountryRegionCode return value in the CASE statement. Order by the values for CountryRegionCode in ascending order.
+5.) Using a CASE expression, return the [TerritoryID] values in [Person].[StateProvince] for each StateProvinceId.
+6.) Copy/paste the query from #5. Remove the StateProvinceID from the SELECT list and count the number of records for each 
+	TerritoryID return value in the CASE statement. Order by the values for TerritoryID in ascending order.
+7.) Why can the query in #6 return the same values if the StateProvinceID is included in the SELECT list but the query in #4 cannot?
+*/
