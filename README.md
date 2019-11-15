@@ -11,6 +11,7 @@ This is a repo of materials for IS6030, a SQL course at the University of Cincin
 + ~~Week 2~~
 + [Week 3](https://mrrisley.github.io/sql-uc-fall2019/week-3/)
 + [Week 4](https://mrrisley.github.io/sql-uc-fall2019/week-4/)
++ [Week 5](https://mrrisley.github.io/sql-uc-fall2019/week-5/)
 
 ## Course Info
 
