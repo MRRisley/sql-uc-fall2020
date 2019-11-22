@@ -9,7 +9,7 @@
 
 #### 3. `JOIN`
 
-  + *Lecture:* The SQL *JOIN* ([sql-join.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-6/sql-null.pptx))
+  + *Lecture:* The SQL *JOIN* ([sql-join.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-6/sql-join.pptx))
   + *SQL Lecture Replication:* ([join-ppt-ex.sql](https://mrrisley.github.io/sql-uc-fall2019/week-6/join-ppt-ex.sql))
   + *SQL Practice:* ([join.sql](https://mrrisley.github.io/sql-uc-fall2019/week-6/join.sql))
 
