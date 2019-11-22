@@ -2,19 +2,18 @@
 
 #### 1. Assessment
 
-#### 2. JOIN
+#### 2. `NULL` 
 
-  + `INNER JOIN`
-  + Outer Joins
-    + `LEFT JOIN`
-    + `RIGHT JOIN`
-    + `OUTER JOIN`
+  + *Lecture:* The SQL *NULL* ([sql-null.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-6/sql-null.pptx))
+  + *SQL Practice:* ([null.sql](https://mrrisley.github.io/sql-uc-fall2019/week-6/null.sql))
 
-#### 3. Table Creation
+#### 3. `JOIN`
 
-  + `SELECT INTO`
-  + `INSERT INTO`
-  + Temporary Tables
+  + *Lecture:* The SQL *JOIN* ([sql-join.pptx](https://mrrisley.github.io/sql-uc-fall2019/week-6/sql-null.pptx))
+  + *SQL Lecture Replication:* ([join-ppt-ex.sql](https://mrrisley.github.io/sql-uc-fall2019/week-6/join-ppt-ex.sql))
+  + *SQL Practice:* ([join.sql](https://mrrisley.github.io/sql-uc-fall2019/week-6/join.sql))
 
-#### 4. Miscellaneous
+#### 4. Open Forum
+
+
 
