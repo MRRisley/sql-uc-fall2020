@@ -249,8 +249,9 @@ Tables: temporary table from A and Person.AddressType
 
 Tables: the temporary table created in JOIN Example B and Person.StateProvince
 
-1. We want to add information to our temporary table from Person.StateProvince
-	to identify . What JOIN will be the most appropriate?
+1. We want to add information to our temporary table #temp_final from Person.StateProvince
+	and want to retain all records within #temp_final. 
+	What JOIN will be the most appropriate?
 2. Write a query that joins the data based on your answer to (1.). Make sure
 	the query has the following properties:
 	(a) Include all fields from the temporary table.
