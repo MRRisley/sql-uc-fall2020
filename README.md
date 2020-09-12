@@ -1,4 +1,4 @@
-# IS6030 19FS
+# IS6030 20FS
 This is a repo of materials for IS6030, a SQL course at the University of Cincinnati.
 
 [Web](https://mrrisley.github.io/sql-uc-fall2020/)
