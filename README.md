@@ -8,6 +8,7 @@ This is a repo of materials for IS6030, a SQL course at the University of Cincin
 ## Course Materials
 
 + [Week 1](https://mrrisley.github.io/sql-uc-fall2019/week-1/): SSMS set-up and SQL intro
+
 <!--
 + ~~Week 2~~
 + [Week 3](https://mrrisley.github.io/sql-uc-fall2019/week-3/): `WHERE` and `ORDER BY`
@@ -23,7 +24,6 @@ This is a repo of materials for IS6030, a SQL course at the University of Cincin
 
 <!--
 ## Prior Course Site
-
 + [https://mrrisley.github.io/SQL](https://mrrisley.github.io/SQL)
 -->
 
