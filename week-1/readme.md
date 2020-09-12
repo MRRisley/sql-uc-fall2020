@@ -5,9 +5,7 @@
 1. Course Introduction
 
     + [Syllabus](https://mrrisley.github.io/sql-uc-fall2020/docs/IS6030_003_Risley_Syllabus_20FS.pdf)
-    + Blackboard
-    + About Me
-    + About You
+    + Canvas
 
 2. GitHub Introduction
 
